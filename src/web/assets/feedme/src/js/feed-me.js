@@ -191,6 +191,7 @@ $(function () {
         .parents('.field-extra-settings')
         .find('.element-group-entrytype');
       var sections = $container.data('items');
+      var selectedTypeId = $container.data('selectedtypeid');
 
       // var sections = $(this).parents('.element-sub-group').data('items');
       var entryType = 'item_' + $(this).val();
@@ -209,7 +210,7 @@ $(function () {
             (index == selectedTypeId ? ' selected="selected"' : '') +
             '>' +
             value +
-            '</option>';
+            '</option>';  
         }
       });
 
