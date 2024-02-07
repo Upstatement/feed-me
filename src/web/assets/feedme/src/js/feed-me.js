@@ -202,7 +202,14 @@ $(function () {
       var newOptions = '';
       $.each(entryTypes, function (index, value) {
         if (index) {
-          newOptions += '<option value="' + index + '">' + value + '</option>';
+          newOptions +=
+            '<option value="' +
+            index +
+            '"' +
+            (index == selectedTypeId ? ' selected="selected"' : '') +
+            '>' +
+            value +
+            '</option>';
         }
       });
 
